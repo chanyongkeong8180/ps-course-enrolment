@@ -1,21 +1,21 @@
 import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
-import { getCategories } from "../api";
+import { getDiplomas } from "../api";
 
 
 export default function Register() {
   const navigate = useNavigate();
-  const categories = getCategories();
+  const diplomas = getDiplomas();
   const emailRef = useRef(null);
   const nameRef = useRef(null);
-  const catRef = useRef(null);
+  const diplomaRef = useRef(null);
 
   function handleSubmit(event) {
     event.preventDefault();
     navigate("/confirmed", {state: 
       {email: emailRef.current.value,
       name: nameRef.current.value,
-      category: catRef.current.value}});
+      diploma: diplomaRef.current.value}});
   }
 
   return (
@@ -31,12 +31,12 @@ export default function Register() {
         </label>
         <input type="text" name="email" ref={nameRef} required/>
         <label>
-          Categories:
+          Diplomas:
         </label>
-        <select className="categories" ref={catRef}>
-          {categories.map(cat => (
+        <select className="categories" ref={diplomaRef}>
+          {diplomas.map(diploma => (
             <option>
-              {cat.name}
+              {diploma.name}
             </option>
           ))}
           </select>

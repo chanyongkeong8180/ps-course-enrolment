@@ -67,20 +67,20 @@ nav a:hover,
   color: darkorange;
 }
 
-.categories a {
+.diplomas a {
   font-weight: 500;
   color: gray;
   text-decoration: none;
   padding: 0.25em 0.4em;
 }
-.categories a:hover, 
-a.category-active {
+.diplomas a:hover, 
+a.diploma-active {
   color: white;
   background-color: gray;
   border-radius: 3px;
 }
 
-.session a {
+.module a {
   display: block;
   color: limegreen;
   text-decoration: none;
@@ -89,8 +89,8 @@ a.category-active {
   border-radius: 3px;
 }
 
-.session a:hover, 
-a.session-active {
+.module a:hover, 
+a.module-active {
   color: orange;
 }
 
@@ -104,25 +104,21 @@ a.session-active {
   margin-bottom: 1.5em;
 }
 
-.categories {
+.diplomas{
   margin-top: 2.5em;
   margin-bottom: 1.5em;
 }
 
-ul.session-list {
-  display: flex;
-}
-
-.session {
+.module {
   margin-left: 1.25em;
 }
 
-.session-name {
+.module-name {
   font-size: 1.125rem;
   font-weight: bold;
 }
 
-.session p {
+.module p {
   margin: 0 auto;
 }
 
@@ -215,7 +211,7 @@ footer.container {
   .nav-active {
     border-bottom: 2px solid currentColor;
   }
-  .categories {
+  .diplomas, .module-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
