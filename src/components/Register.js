@@ -1,35 +1,45 @@
 import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
+import { getCategories } from "../api";
+
 
 export default function Register() {
   const navigate = useNavigate();
+  const categories = getCategories();
   const emailRef = useRef(null);
   const nameRef = useRef(null);
+  const catRef = useRef(null);
 
   function handleSubmit(event) {
     event.preventDefault();
     navigate("/confirmed", {state: 
       {email: emailRef.current.value,
-      name: nameRef.current.value}});
+      name: nameRef.current.value,
+      category: catRef.current.value}});
   }
 
   return (
     <div className="container">
-      <h1>Register for Red30 Tech</h1>
-      <p>
-        Make sure to grab your spot for this year's conference! We love
-        technology and consistently work towards being the premier provider of
-        technology solutions and events that connect the world.
-      </p>
-      <form onSubmit={handleSubmit}>
+      <h1>Register for RP SOI Course</h1>
+      <form className="container" onSubmit={handleSubmit}>
         <label>
           Email:
-          <input type="text" name="email" ref={emailRef} required/>
         </label>
+        <input type="text" name="email" ref={emailRef} required/>
         <label>
           Full Name:
-          <input type="text" name="email" ref={nameRef} required/>
         </label>
+        <input type="text" name="email" ref={nameRef} required/>
+        <label>
+          Categories:
+        </label>
+        <select className="categories" ref={catRef}>
+          {categories.map(cat => (
+            <option>
+              {cat.name}
+            </option>
+          ))}
+          </select>
         <input type="submit" value="Submit" />
       </form>
     </div>

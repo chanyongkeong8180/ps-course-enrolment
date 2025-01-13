@@ -1,20 +1,23 @@
 export default function About() {
   return (
     <div className="container">
-      <h1>Technology and Business Solutions</h1>
+      <h1>About SOI</h1>
       <p>
-        Red30 Tech is the leading source of secure, fully customizable
-        technology and business solutions. We cater to those who need scalable
-        results that are sustainable for their company and the planet. With the
-        ever-evolving technology landscape, we want to be your go-to source for
-        business technology.
+        The School of Infocomm (SOI) prepares students for a dynamic world that is interconnected. 
+        The School supports Singapore's Smart Nation vision by providing hands-on, 
+        applied training in a variety of infocomm disciplines.
       </p>
       <p>
-        Our mission is to provide technology and business-driven solutions that
-        work seamlessly with your company, allowing your employees, partners,
-        and customers to engage in quality interactions that lead to scalable
-        growth. We consistently work towards being the premier provider of
-        environmentally sustainable technology solutions that connect the world.
+        Some of the courses offered include information technology, business applications 
+        and information systems, interactive and digital media, mobile software development, 
+        and infocomm security management, which took in its inaugural batch of students in 2015.
+      </p>
+      <p>
+      SOI has a strong and growing network of industry partners, 
+      providing students with ever-increasing opportunities for skills training and applied learning. 
+      Students also are afforded valuable opportunities through the School to earn 
+      various industry-recognised certifications, such as the CISCO Certified Network Associate (CCNA), 
+      Information Technology Infrastructure Library (ITIL) Foundation certifications. 
       </p>
     </div>
   );

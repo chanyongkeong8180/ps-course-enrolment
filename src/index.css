@@ -1,40 +1,31 @@
-/* base styles */
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  color: #222;
-  font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+  color: black;
 }
 
 h1 {
   font-size: 2.2rem;
-  margin: 0 0 1em 0;
+  margin: 0 auto;
 }
 
 h2 {
   font-size: 1.85rem;
-  color: #858585;
+  color: gray;
 }
 
 h3 {
   font-size: 1.5rem;
-  margin-bottom: 0;
+  margin-bottom: 1.5em;
 }
 
 h4 {
   font-size: 1.25rem;
-  color: #525252;
-  margin: 0 0 0.25em;
-}
-
-h4 + span {
-  display: block;
-  margin-bottom: 1.65em;
+  color: gray;
+  margin: 0 auto;
 }
 
 p {
@@ -46,18 +37,15 @@ p {
 ul {
   list-style: none;
   font-size: 1.125rem;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
 }
 
 ul li {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
-/* nav & links */
-
 a {
-  color: #e7212b;
+  color: orange;
 }
 
 a:hover {
@@ -67,7 +55,7 @@ a:hover {
 nav a {
   display: block;
   font-size: 1.25rem;
-  color: #DD1F26;
+  color: limegreen;
   padding-bottom: 0.15em;
   border-bottom: 2px solid transparent;
   font-weight: 500;
@@ -76,25 +64,25 @@ nav a {
 
 nav a:hover, 
 .nav-active {
-  color: #5dabaa;
+  color: darkorange;
 }
 
 .categories a {
   font-weight: 500;
-  color: #605e5e;
+  color: gray;
   text-decoration: none;
   padding: 0.25em 0.4em;
 }
 .categories a:hover, 
 a.category-active {
-  color: #fff;
-  background-color: #605e5e;
+  color: white;
+  background-color: gray;
   border-radius: 3px;
 }
 
 .session a {
   display: block;
-  color: rgb(56, 56, 56);
+  color: limegreen;
   text-decoration: none;
   border: 1px solid currentColor;
   padding: 0.85em 1.125em;
@@ -103,18 +91,17 @@ a.category-active {
 
 .session a:hover, 
 a.session-active {
-  color: #489b9a;
+  color: orange;
 }
 
-/* components & assets */
 .logo {
   width: 220px;
 }
 
 .img-feat {
   width: 100%;
-  border-radius: 0.35em;
-  margin-bottom: 2em;
+  border-radius: 3px;
+  margin-bottom: 1.5em;
 }
 
 .categories {
@@ -126,8 +113,8 @@ ul.session-list {
   display: flex;
 }
 
-.session + .session {
-  margin-left: 1.5em;
+.session {
+  margin-left: 1.25em;
 }
 
 .session-name {
@@ -136,47 +123,42 @@ ul.session-list {
 }
 
 .session p {
-  margin: 0;
+  margin: 0 auto;
 }
 
 form {
   font-size: 1.25rem;
-  margin: 2em auto;
+  margin: 0 auto;
 }
 
 label {
   display: block;
   font-weight: 500;
-  margin-bottom: 1.5em;
+  margin-top: 2.5em;
 }
 
-input {
+input, select {
   font-size: 1em;
-  margin-top: 0.35em;
+  margin-top: 2.5em;
   display: block;
   width: 100%;
   padding: 0.5em;
-  border: 1px solid #dbdbdb;
+  border: 1px solid black;
   border-radius: 3px;
-}
-
-input:focus {
-  outline-color: #5dabaa;
 }
 
 input[type="submit"] {
   cursor: pointer;
-  color: #fff;
+  color: white;
   font-weight: bold;
   padding: 0.65em 0;
-  background-color: #75bebd;
+  background-color: limegreen;
   border: none;
 }
 input[type="submit"]:hover {
-  background-color: #5dabaa;
+  background-color: orange;
 }
 
-/* layout */
 .app {
   min-height: 100vh;
   display: flex;
@@ -198,8 +180,8 @@ header {
 
 footer.container {
   padding: 2.25em 0;
-  margin-top: auto;
-  border-top: 1px solid rgb(219, 219, 219);
+  margin-top: 2.5em;
+  border-top: 1px solid gray;
 }
 
 .container {
@@ -208,7 +190,7 @@ footer.container {
   margin: 0 auto;
 }
 
-/* media queries */
+
 @media (max-width: 767px) {
   nav a {
     padding: 0.35em 0;
@@ -225,7 +207,7 @@ footer.container {
     margin-bottom: 1em;
   }
   nav {
-    margin-left: auto;
+    margin-left: 1.25em;
   }
   nav a {
     margin-left: 1.25em;
