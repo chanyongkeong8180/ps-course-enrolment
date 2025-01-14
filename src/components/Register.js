@@ -27,19 +27,19 @@ export default function Register() {
         </label>
         <input type="text" name="email" ref={emailRef} required/>
         <label>
-          Full Name:
+          Name:
         </label>
-        <input type="text" name="email" ref={nameRef} required/>
+        <input type="text" name="name" ref={nameRef} required/>
         <label>
-          Diplomas:
+          Diploma:
         </label>
-        <select className="categories" ref={diplomaRef}>
+        <select className="diplomas" ref={diplomaRef}>
           {diplomas.map(diploma => (
             <option>
               {diploma.name}
             </option>
           ))}
-          </select>
+        </select>
         <input type="submit" value="Submit" />
       </form>
     </div>
